@@ -1,9 +1,5 @@
 # Database Tutorial
 
-## 목차
-1. [사용자 관리](https://github.com/LeeSM0518/database/blob/master/UserManagement.md)
-2. [테이블 관리](https://github.com/LeeSM0518/database/blob/master/TableManagement.md)
-
 # Mac OS
 
 ## Step 01. 설치
@@ -40,3 +36,6 @@
 
 psql –U postgres –d postgres
 
+## 목차
+1. [사용자 관리](https://github.com/LeeSM0518/database/blob/master/UserManagement.md)
+2. [테이블 관리](https://github.com/LeeSM0518/database/blob/master/TableManagement.md)
