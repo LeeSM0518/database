@@ -120,8 +120,11 @@
 
   ```sql
   create table part_music(
-  pm_msc_code
-  )
+  pm_msc_code varchar references music(msc_code),
+  pm_emp_code varchar references employee(emp_code),
+  pm_emp_role varchar,
+  pm_emp_fee int
+  );
   ```
 
 
@@ -296,4 +299,36 @@
   ('DRM10', 'E003', '주연', 15000);
   ```
 
-  
+* **음반참여(part_music)**
+
+  ```sql
+  insert into part_music values
+  ('MSC01', 'E008', '메인',  8500),
+  ('MSC02', null, null, null),
+  ('MSC03', 'E007', '피처링', 1500),
+  ('MSC04', 'E003', '피처링', 1500),
+  ('MSC05', null, null, null),
+  ('MSC06', null, null, null),
+  ('MSC07', null, null, null),
+  ('MSC08', 'E008', '메인', 13500),
+  ('MSC09', null, null, null),
+  ('MSC10', 'E006', '메인', 15500);
+  ```
+
+
+
+## 조회
+
+```sql
+select * from department;
+select * from drama;
+select * from emp_role;
+select * from employee;
+select * from movie;
+select * from music;
+select * from part_drama;
+select * from part_movie;
+select * from part_music;
+select * from rel_department;
+```
+
