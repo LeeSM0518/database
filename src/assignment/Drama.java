@@ -10,6 +10,14 @@ public class Drama {
   private String broadcastStation;
   private Date broadcastDate;
 
+  public Drama(String code, String name, String producer, String broadcastStation, Date broadcastDate) {
+    this.code = code;
+    this.name = name;
+    this.producer = producer;
+    this.broadcastStation = broadcastStation;
+    this.broadcastDate = broadcastDate;
+  }
+
   public String getCode() {
     return code;
   }
@@ -48,5 +56,17 @@ public class Drama {
 
   public void setBroadcastDate(Date broadcastDate) {
     this.broadcastDate = broadcastDate;
+  }
+
+  @Override
+  public String toString() {
+    final StringBuilder sb = new StringBuilder("Drama{");
+    if(code != null) sb.append("code='").append(code).append('\'');
+    if(name != null) sb.append(", name='").append(name).append('\'');
+    if(producer != null) sb.append(", producer='").append(producer).append('\'');
+    if(broadcastStation != null) sb.append(", broadcastStation='").append(broadcastStation).append('\'');
+    if(broadcastDate != null) sb.append(", broadcastDate=").append(broadcastDate);
+    sb.append('}');
+    return sb.toString();
   }
 }

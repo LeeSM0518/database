@@ -33,6 +33,47 @@ public class DatabaseService {
     }
   }
 
+  public static void executeUpdateQuery(String query) {
+    try (Connection connection = DatabaseService.getConnection();
+         PreparedStatement preparedStatement = connection.prepareStatement(query);
+    ) {
+      connection.setAutoCommit(false);
+      int retValue = preparedStatement.executeUpdate();
+      connection.commit();
+
+      System.out.println(retValue + "건의 사항이 처리되었습니다.");
+    } catch (SQLException e) {
+      printSQLException(e);
+    }
+  }
+
+  public static void executeInsertQuery(String query, Consumer<PreparedStatement> consumer) {
+    try (Connection connection = DatabaseService.getConnection();
+         PreparedStatement preparedStatement = connection.prepareStatement(query);
+    ) {
+      connection.setAutoCommit(false);
+      consumer.accept(preparedStatement);
+      int[] retValue = preparedStatement.executeBatch();
+      connection.commit();
+      System.out.println(retValue.length + "건의 사항이 처리되었습니다.");
+    } catch (SQLException e) {
+      printSQLException(e);
+    }
+  }
+
+  public static void executeDeleteQuery(String query) {
+    try (Connection connection = DatabaseService.getConnection();
+         PreparedStatement preparedStatement = connection.prepareStatement(query);
+    ) {
+      connection.setAutoCommit(false);
+      int retValue = preparedStatement.executeUpdate();
+      connection.commit();
+      System.out.println(retValue + "건의 사항이 처리되었습니다.");
+    } catch (SQLException e) {
+      printSQLException(e);
+    }
+  }
+
   public static void printSQLException(SQLException exception) {
     System.out.println("SQLException: " + exception.getMessage());
     System.out.println("SQLState: " + exception.getSQLState());
