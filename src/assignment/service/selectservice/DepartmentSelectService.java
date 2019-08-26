@@ -1,7 +1,4 @@
-package assignment.service;
-
-import java.sql.ResultSet;
-import java.sql.SQLException;
+package assignment.service.selectservice;
 
 public class DepartmentSelectService {
 

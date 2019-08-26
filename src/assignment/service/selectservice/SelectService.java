@@ -1,4 +1,6 @@
-package assignment.service;
+package assignment.service.selectservice;
+
+import assignment.service.DatabaseService;
 
 import java.sql.ResultSet;
 import java.util.List;

@@ -78,11 +78,11 @@
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="DepartmentSelectService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assignment.service.DepartmentSelectService" />
+      <option name="MAIN_CLASS_NAME" value="assignment.service.selectservice.DepartmentSelectService" />
       <module name="database" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assignment.service.*" />
+          <option name="PATTERN" value="assignment.service.selectservice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,11 +91,11 @@
       </method>
     </configuration>
     <configuration name="DramaSelectService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assignment.service.DramaSelectService" />
+      <option name="MAIN_CLASS_NAME" value="assignment.service.selectservice.DramaSelectService" />
       <module name="database" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assignment.service.*" />
+          <option name="PATTERN" value="assignment.service.selectservice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,11 +104,11 @@
       </method>
     </configuration>
     <configuration name="EmployeeSelectService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assignment.service.EmployeeSelectService" />
+      <option name="MAIN_CLASS_NAME" value="assignment.service.selectservice.EmployeeSelectService" />
       <module name="database" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assignment.service.*" />
+          <option name="PATTERN" value="assignment.service.selectservice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
