@@ -1,3 +1,5 @@
+package tutorial;
+
 import java.sql.*;
 import java.util.Scanner;
 

@@ -98,7 +98,7 @@ CREATE TABLE [IF NOT EXISTS] table_name (<column-definition>);
 **예제) 'exercise' 데이터베이스에 'student' 테이블을 생성하라.**
 
 ```
-우리 조직의 학생은 학번(no), 성명(kname, 문자 4자리), 생년월일(birthday, 날짜)를 입력하고, 기본 키는 학번으로 지정한다. 단, 학번과 성명은 반드시 입력해야 한다.
+우리 조직의 학생은 학번(id), 성명(kname, 문자 4자리), 생년월일(birthday, 날짜)를 입력하고, 기본 키는 학번으로 지정한다. 단, 학번과 성명은 반드시 입력해야 한다.
 ```
 
 ```mariadb
@@ -371,7 +371,7 @@ SELECT <target_column> FROM <table_name>
 ```java
 import java.sql.*;
 
-public class SampleCode {
+public class tutorial.SampleCode {
   public static void main(final String... args) {
     try {
       Connection conn = DriverManager.getConnection

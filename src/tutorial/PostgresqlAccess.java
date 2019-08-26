@@ -1,3 +1,5 @@
+package tutorial;
+
 import java.sql.*;
 
 public class PostgresqlAccess {
